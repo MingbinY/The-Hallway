@@ -34041,6 +34041,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6030082624059816909, guid: 7673b025c5f1dfb47bf2690ecd6fcaaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04d2b7dc10fda214e9e76d63a919f468, type: 2}
+    - target: {fileID: 6658494992887223516, guid: 7673b025c5f1dfb47bf2690ecd6fcaaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04d2b7dc10fda214e9e76d63a919f468, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34935,6 +34945,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 110.416
       objectReference: {fileID: 0}
+    - target: {fileID: 8815537180000095415, guid: c680923e601afb44ba303eca34bd52f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3490b9bef67ec9642997cadf10f63689, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
