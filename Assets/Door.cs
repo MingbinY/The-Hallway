@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Animator animator;
+    AudioSource audioSource;
+
+    public AudioClip openClip;
+    public AudioClip closeClip;
+
+    private void Awake()
     {
-        
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+    }
+    public void DoorOpen()
+    {
+        animator.SetTrigger("Open");
+        audioSource.PlayOneShot(openClip);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DoorClose()
     {
-        
+        animator.SetTrigger("Close");
+        audioSource.PlayOneShot(closeClip);
     }
 }

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
-    Animator animator;
+    Door door;
 
     public bool isOpenTrigger;
 
     private void Awake()
     {
-        animator = GetComponentInParent<Animator>();
+        door = GetComponentInParent<Door>();
         GetComponent<Collider>().isTrigger = true;
     }
 
@@ -20,11 +20,11 @@ public class DoorTrigger : MonoBehaviour
         {
             if (isOpenTrigger)
             {
-                animator.SetTrigger("Open");
+                door.DoorOpen();
             }
             else
             {
-                animator.SetTrigger("Close");
+                door.DoorClose();
             }
         }
     }
